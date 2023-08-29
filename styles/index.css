@@ -1,0 +1,6 @@
+/* main bnr */
+main {}
+main .main_bnr {position:relative;}
+main .main_bnr p {position: absolute; right:10%; bottom:10%;}
+main .main_bnr p img {}
+main .main_bnr video {width:100%; }
