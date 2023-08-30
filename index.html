@@ -95,36 +95,256 @@
             </ul>
             <div class="nav_bg"></div>
         </nav>
+        <!-- mobile open nav -->
+        <div class="m_open_nav">
+            <h1><a href="#"><img src="./images/logo_w.png" alt=""></a></h1>
+            <div class="right">
+                <a href="#" class="login"><img src="./images/icon/login_w.png" alt=""></a>
+                <a href="#" class="search_shop"><img src="./images/icon/map_w.png" alt=""></a>
+                <a href="#" class="m_nav"><span></span><span></span><span></span></a>
+            </div>
+        </div>
+        <div class="m_open_menu">
+            <form action="#" method="get" id="open_searchFrm">
+                <fieldset>
+                    <legend class="skip">검색양식</legend>
+                    <input type="text" id="searchTxt" placeholder="제품명을 입력해주세요">
+                    <button type="submit" id="searchBtn"><img src="./images/icon/search_b.png" alt="검색"></button>
+                </fieldset>
+            </form>
+            <ul class="gnb">
+                <li><a href="#">브랜드 스토리</a>
+                    <ul class="sub">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">뚜레쥬르 광고</a></li>
+                        <li><a href="#">뚜레쥬르 재료 이야기</a></li>
+                        <li><a href="#">글로벌 뚜레쥬르 </a></li>
+                        <li><a href="#">뚜레쥬르 라뜰리에</a></li>
+                        <li><a href="#">뚜레쥬르 착한빵</a></li>
+                        <li><a href="#">뉴스 & 공지사항</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">새로워진 뚜레쥬르</a>
+                    <ul class="sub">
+                        <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                        <li><a href="#">건강한 데일리 베이커리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품 안내</a>
+                    <ul class="sub">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">빵</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">델리</a></li>
+                        <li><a href="#">선물</a></li>
+                        <li><a href="#">디저트&스낵</a></li>
+                        <li><a href="#">음료</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트&멤버십</a>
+                    <ul class="sub">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">이벤트 당첨자</a></li>
+                        <li><a href="#">CJ ONE 멤버십</a></li>
+                        <li><a href="#">제휴 혜택</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">앱&온라인 쇼핑몰</a>
+                    <ul class="sub">
+                        <li><a href="#">뚜레쥬르 앱</a></li>
+                        <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                        <li><a href="#">꽃 & 케이크 택배 배송</a></li>
+                        <li><a href="#">대량 구매 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="open_menu_sns">
+                <a href="#"><img src="./images/icon/facebook_b.png" alt="페이스북"></a>
+                <a href="#"><img src="./images/icon/twitter_b.png" alt="트위터"></a>
+                <a href="#"><img src="./images/icon/instagram.png" alt="인스타그램"></a>
+            </div>
+        </div>
     </header>
     <!-- main -->
     <main>
         <!-- main bnr -->
-        <div class="main_bnr">
-            <img src="./images/main_logo.jpg" alt="">
+        <div class="main_bnr"><!-- 
+            <img src="./images/main_logo.jpg" alt=""> -->
             <!-- <p><img src="images/video_logo.png" alt=""></p>
             <video src="./video/visual.mp4" autoplay loop muted></video> -->
         </div>
         <!-- 공지사항 -->
-        <div class="notice_wrap">
-            <h2>공지사항</h2>
-            <div class="swiper" id="notice">
-            <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
-                <div class="swiper-wrapper">
-                    <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
-                    <div class="swiper-slide slide1">CGV 영화 관람쿠폰 증정 이벤트 진행 매장 안내</div>
-                    <div class="swiper-slide slide2">CJ푸드빌 영상정보처리기기 운영/관리방침 개정 고지</div>
-                    <div class="swiper-slide slide3">CJ ONE 멤버십 서비스 정책 변경 안내</div>
-                    <div class="swiper-slide slide4">CJ푸드빌 개인정보처리방침 개정 고지</div>
+        <div class="notice">
+            <div class="notice_wrap">
+                <h2>공지사항</h2>
+                <div class="swiper" id="notice">
+                <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
+                    <div class="swiper-wrapper">
+                        <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
+                        <div class="swiper-slide slide1">CGV 영화 관람쿠폰 증정 이벤트 진행 매장 안내</div>
+                        <div class="swiper-slide slide2">CJ푸드빌 영상정보처리기기 운영/관리방침 개정 고지</div>
+                        <div class="swiper-slide slide3">CJ ONE 멤버십 서비스 정책 변경 안내</div>
+                        <div class="swiper-slide slide4">CJ푸드빌 개인정보처리방침 개정 고지</div>
+                    </div>
+                    <!-- 슬라이드 이전, 다음 버튼 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <a href="#"><img src="./images/icon/more.png" alt="더보기"></a>
+            </div>
+        </div>
+        <!-- online shop bnr -->
+        <div class="online_shop_bnr_bg">
+            <div class="online_shop_bnr_wrap">
+                <div class="online_shop_txt">
+                    <h3>쇼핑몰 &<br>케이크배달</h3>
+                    <p>뚜레쥬르 제품을 온라인에서<br>
+                        구매&배송신청 하세요</p>
+                    <a href="#">자세히보기</a>
+                </div>
+                <div class="online_shop_img">
+                    <img src="./images/delivery_bnr0.png" alt="">
                 </div>
             </div>
-            <a href="#"><img src="./images/icon/plus_w.png" alt="더보기"></a>
-        </div>
+        </div><!-- end -->
+        <!-- 추천제품 -->
+        <div class="recommend_product_wrap">
+            <div class="recommend_title">
+                <img src="./images/logo_g.png" alt=""><span>추천제품</span>
+            </div>
+            <div class="recommend_contents">
+                <div class="swiper" id="recommend_product">
+                    <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
+                    <div class="swiper-wrapper">
+                        <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <a href="#" class="product1">
+                                <img src="./images/product1.png" alt="">
+                                <span>라라스윗 생우유 아이슈크림</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 슬라이드 이전, 다음 버튼 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div><!-- #recommend_product end -->
+            </div><!-- .recommend_contents end -->
+        </div><!-- 추천제품 영역 end -->
+        <!-- 이벤트 슬라이드 -->
+        <div class="event_slide_wrap">
+            <div class="swiper" id="event_slide">
+                <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
+                <div class="swiper-wrapper">
+                    <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
+                    <div class="swiper-slide slide1"></div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                    <div class="swiper-slide slide4"></div>
+                </div>
+                <!-- 슬라이드 이전, 다음 버튼 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div><!-- #event_slide end -->
+        </div><!-- 이벤트 슬라이드 end -->
+        <!-- 매장찾기 -->
+        <div class="search_shop_wrap">
+            <div class="search_shop_txt">
+                <p>가까운 뚜레쥬르 매장을 찾아보세요</p>
+                <form action="#" method="get" id="search_shop_frm">
+                    <fieldset>  
+                        <legend class="skip">검색영역</legend>
+                        <input type="text" class="search_txt" placeholder="매장명이나 시/군/구 명 입력">
+                        <button type="submit" class="search_btn"><img src="./images/icon/search_b.png" alt="검색"></button>
+                    </fieldset>
+                </form>
+            </div><!-- .search_shop_txt end -->
+        </div><!-- 매장찾기 end -->
+        <!-- 안내 배너 -->
+        <div class="info_bnr_wrap">
+            <a href="#"><img src="./images/info_bnr.png" alt=""></a>
+            <a href="#"><img src="./images/info_bnr.png" alt=""></a>
+            <a href="#"><img src="./images/info_bnr.png" alt=""></a>
+        </div><!-- 안내 배너 end -->
     </main>
     <!-- footer -->
     <footer>
-
+        <div class="f_top">
+            <a href="#"><img src="./images/f_logo_cjfood.png" alt="cj푸드빌"></a>
+            <a href="#"><img src="./images/f_logo_vips.png" alt="vips"></a>
+            <a href="#"><img src="./images/f_logo_the_place.png" alt="더플레이스"></a>
+            <a href="#"><img src="./images/f_logo_noodle.png" alt="제일제면소"></a>
+            <a href="#"><img src="./images/f_logo_n_seoul_tower.png" alt="n서울타워"></a>
+        </div>
+        <div class="f_btm">
+            <ul class="fnb">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">위치기반서비스 이용약관</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">기사 채용안내</a></li>
+                <li><a href="#">창업안내</a></li>
+                <li><a href="#">윤리신고센터</a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <p>고객센터 : 1577 - 0700 / 9시 - 18시 (점심 12시 - 13시) ※ 주말, 공휴일 제외</p>
+            <address>상호명 : CJ푸드빌(주)   주소 : (우) 04555 서울시 중구 마른내로34(초동 106-9번지) KT&G을지로타워 3,9-11층 CJ푸드빌(주)<br>
+                통신판매업종신고증 제 2011-서울중구-0771호<a href="#" class="company_info">사업자정보확인</a>호스팅제공자 : CJ올리브네트웍스(주)<br>
+                사업자등록번호 : 312-81-42519   개인정보보호책임자 : 김재완   대표이사 : 김찬호   <a href="help_master@cj.net" class="mail">대표 이메일 : help_master@cj.net</a></address>
+            <span>COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.</span>
+        </div>
     </footer>
     <!-- common.js -->
+    <script src="./script/index.js"></script>
     <script src="./script/common.js"></script>
 </body>
 </html>

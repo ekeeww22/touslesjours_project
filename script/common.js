@@ -51,3 +51,26 @@ searchTxt.classList.toggle('showHide')
 searchBtn.addEventListener('click',function(){
     searchTxt.classList.toggle('showHide')
 }) */
+
+/* open menu */
+const openNavBtn = document.querySelector('.right > .m_nav')
+const openMenu = document.querySelector('.m_open_menu')
+const openMenuGnb = document.querySelectorAll('.m_open_menu > .gnb > li > a')
+const openMenuSub = document.querySelectorAll('.m_open_menu > .gnb > li > .sub > li > a')
+console.log(openNavBtn, openMenu, openMenuGnb, openMenuSub)
+openMenu.classList.toggle('showHide')
+openNavBtn.addEventListener('click',function(){
+    openMenu.classList.toggle('showHide')
+})
+sub_func('none')
+function sub_func(status){
+    for(let i of sub){i.style.display = status}
+}
+for(let i of gnb){
+    i.addEventListener('mouseover',function(){
+        sub_func('block')
+    })
+    i.addEventListener('mouseout',function(){
+        sub_func('none')
+    })
+}
