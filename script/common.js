@@ -55,22 +55,26 @@ searchBtn.addEventListener('click',function(){
 /* open menu */
 const openNavBtn = document.querySelector('.right > .m_nav')
 const openMenu = document.querySelector('.m_open_menu')
-const openMenuGnb = document.querySelectorAll('.m_open_menu > .gnb > li > a')
-const openMenuSub = document.querySelectorAll('.m_open_menu > .gnb > li > .sub > li > a')
+const openMenuGnb = document.querySelectorAll('.m_open_menu > .gnb > li')
+const openMenuSub = document.querySelectorAll('.m_open_menu > .gnb > li > .sub ')
+const openMenuSubA = document.querySelectorAll('.m_open_menu > .gnb > li > .sub > li')
+const closeBtn = document.querySelector('.close_btn')
 console.log(openNavBtn, openMenu, openMenuGnb, openMenuSub)
+
 openMenu.classList.toggle('showHide')
 openNavBtn.addEventListener('click',function(){
+    
     openMenu.classList.toggle('showHide')
 })
-sub_func('none')
-function sub_func(status){
-    for(let i of sub){i.style.display = status}
+closeBtn.addEventListener('click',function(){
+    openMenu.classList.toggle('showHide')
+})
+for(let i of openMenuSub){
+    i.style.display = 'none'
 }
-for(let i of gnb){
-    i.addEventListener('mouseover',function(){
-        sub_func('block')
+openMenuGnb.forEach(function(t, i){
+    t.addEventListener('click',function(){
+        openMenuSub[i].style.display = 'block'
     })
-    i.addEventListener('mouseout',function(){
-        sub_func('none')
-    })
-}
+    
+})

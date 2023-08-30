@@ -5,23 +5,22 @@ main .main_bnr {width:100%; height:850px; background:url(../images/main_logo.jpg
 /* 공지사항 */
 main .notice {background:#0d4633; z-index:100; position:relative; display:flex; justify-content:center;}
 main .notice_wrap {
-    max-width:1000px;
     height:50px;  color:#fff; display:flex; align-items:center; justify-content:center;}
 main .notice_wrap h2 {}
-main .notice_wrap #notice {width:600px;}
+main .notice_wrap #notice {width:600px; height:50px;}
 main .notice_wrap #notice .swiper-wrapper {}
-main .notice_wrap #notice .swiper-wrapper .swiper-slide {text-align:center;}
+main .notice_wrap #notice .swiper-wrapper .swiper-slide {text-align:center; line-height:50px;}
 main .notice_wrap #notice .swiper-button-prev::after,
 main .notice_wrap #notice .swiper-button-next::after {display:none;}
 main .notice_wrap a {}
 main .notice_wrap a img {}
 /* online shop bnr */
 main .online_shop_bnr_bg {
-    background:url(../images/delivery_bnr2.jpg) fixed no-repeat; background-size:cover; background-position:bottom; padding:50px; height:600px;
+    background:url(../images/delivery_bnr2.jpg) fixed no-repeat; background-size:cover; background-position:bottom; padding:50px; height:600px; 
 }
 main .online_shop_bnr_bg .online_shop_bnr_wrap {
     display:flex; align-items:center; justify-content:space-around;} 
-main .online_shop_bnr_bg .online_shop_bnr_wrap .online_shop_txt {color:#2e2e2e; text-align:right;}
+main .online_shop_bnr_bg .online_shop_bnr_wrap .online_shop_txt {color:#2e2e2e; text-align:right; }
 main .online_shop_bnr_bg .online_shop_bnr_wrap .online_shop_txt h3 {
     font-size:3.157rem; font-weight:800; line-height:65px;
 }
@@ -41,7 +40,7 @@ main .recommend_product_wrap .recommend_title img {width:380px;}
 main .recommend_product_wrap .recommend_title span {font-size: 2.36856rem; color: #005c38; font-weight: 600;
 }
 main .recommend_product_wrap .recommend_contents {}
-main .recommend_product_wrap .recommend_contents #recommend_product {width:1300px;}
+main .recommend_product_wrap .recommend_contents #recommend_product {max-width:1300px; min-width:600px;}
 main .recommend_product_wrap .recommend_contents #recommend_product .swiper-wrapper {}
 main .recommend_product_wrap .recommend_contents #recommend_product .swiper-wrapper .swiper-slide {}
 main .recommend_product_wrap .recommend_contents #recommend_product .swiper-button-prev::after,
@@ -77,4 +76,16 @@ main .info_bnr_wrap {display:flex; justify-content:center; margin:100px 0;}
 main .info_bnr_wrap a { width:470px; height:280px; margin-right:20px;}
 main .info_bnr_wrap a:last-child {margin-right:0;}
 main .info_bnr_wrap a img {width:100%;}
-
+/* 반응형 */
+/* @media screen and (max-width:1300px) {
+    main .online_shop_bnr_bg .online_shop_bnr_wrap .online_shop_txt h3 {font-size: 1.75rem;}
+    main .online_shop_bnr_bg .online_shop_bnr_wrap .online_shop_img img {transform: translatex(-30%); max-width:100%;}
+} */
+/* mobile */
+@media screen and (max-width:940px) {
+    main .notice_wrap {min-width:590px;}
+    main .notice_wrap #notice {width:500px;}
+}
+@media screen and (max-width:620px) {
+    .recommend_title {width:600px;}
+}
