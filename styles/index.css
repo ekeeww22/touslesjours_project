@@ -5,4 +5,4 @@ main .main_bnr p {position: absolute; right:10%; bottom:10%;}
 main .main_bnr p img {}
 main .main_bnr video {width:100%; }
 /* 공지사항 */
-main notice_wrap {}
+main {}
