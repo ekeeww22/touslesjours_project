@@ -5,7 +5,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>건강한 데일리 베이커리 | 뚜레쥬르</title>
+    <title>빵 | 제품안내 | 뚜레쥬르</title>
     <!-- swiper slide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -14,8 +14,8 @@
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/product.css">
 </head>
 <body>
     <!-- quick menu -->
@@ -168,154 +168,85 @@
     </header><!-- header end -->
     <!-- main -->
     <main>
-        <!-- main bnr -->
-        <div class="main_bnr"><!-- 
-            <img src="./images/main_logo.jpg" alt=""> -->
-            <!-- <p><img src="images/video_logo.png" alt=""></p>
-            <video src="./video/visual.mp4" autoplay loop muted></video> -->
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="#" class="main_page"><img src="./images/icon/home.png" alt="메인으로가기"></a>
+            <img src="./images/icon/next_b.png" alt="">
+            <a href="#" class="product_info_page">제품안내</a>
+            <img src="./images/icon/next_b.png" alt="">
+            <span class="now_page">빵</span>
         </div>
-        <!-- 공지사항 -->
-        <div class="notice">
-            <div class="notice_wrap">
-                <h2>공지사항</h2>
-                <div class="swiper" id="notice">
-                <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
-                    <div class="swiper-wrapper">
-                        <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
-                        <div class="swiper-slide slide1">CGV 영화 관람쿠폰 증정 이벤트 진행 매장 안내</div>
-                        <div class="swiper-slide slide2">CJ푸드빌 영상정보처리기기 운영/관리방침 개정 고지</div>
-                        <div class="swiper-slide slide3">CJ ONE 멤버십 서비스 정책 변경 안내</div>
-                        <div class="swiper-slide slide4">CJ푸드빌 개인정보처리방침 개정 고지</div>
-                    </div>
-                    <!-- 슬라이드 이전, 다음 버튼 -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-                <a href="#"><img src="./images/icon/more.png" alt="더보기"></a>
+        <!-- category 영역 -->
+        <div id="category">
+            <p class="title">BREAD</p>
+            <div class="contents">
+                <a href="#">
+                    <img src="./images/category1.png" alt="">
+                    <p>전체보기</p>
+                </a>
+                <a href="#">
+                    <img src="./images/category1.png" alt="">
+                    <p>식빵</p>
+                </a>
+                <a href="#">
+                    <img src="./images/category1.png" alt="">
+                    <p>건강빵</p>
+                </a>
+                <a href="#">
+                    <img src="./images/category1.png" alt="">
+                    <p>간식빵</p>
+                </a>
+                <a href="#">
+                    <img src="./images/category1.png" alt="">
+                    <p>파이/패스트리</p>
+                </a>
+                <a href="#">
+                    <img src="./images/category1.png" alt="">
+                    <p>도넛/고로케</p>
+                </a>
             </div>
         </div>
-        <!-- online shop bnr -->
-        <div class="online_shop_bnr_bg">
-            <div class="online_shop_bnr_wrap">
-                <div class="online_shop_txt">
-                    <h3>쇼핑몰 & 케이크 배달</h3>
-                    <p>뚜레쥬르 제품을 온라인에서<br>
-                        구매&배송신청 하세요</p>
-                    <a href="#">자세히보기</a>
-                </div>
-                <div class="online_shop_img">
-                    <img src="./images/delivery_bnr0.png" alt="">
-                </div>
+        
+        <div class="recommend_slide_wrap">
+            <div class="title">
+                <img src="./images/logo_g.png" alt="뚜레쥬르"><span>추천제품</span>
             </div>
-        </div><!-- end -->
-        <!-- 추천제품 -->
-        <div class="recommend_product_wrap">
-            <div class="recommend_title">
-                <img src="./images/logo_g.png" alt=""><span>추천제품</span>
-            </div>
-            <div class="recommend_contents">
-                <div class="swiper" id="recommend_product">
-                    <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
-                    <div class="swiper-wrapper">
-                        <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide slide1">
-                            <a href="#" class="product1">
-                                <img src="./images/product1.png" alt="">
-                                <span>라라스윗 생우유 아이슈크림</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- 슬라이드 이전, 다음 버튼 -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div><!-- #recommend_product end -->
-            </div><!-- .recommend_contents end -->
-        </div><!-- 추천제품 영역 end -->
-        <!-- 이벤트 슬라이드 -->
-        <div class="event_slide_wrap">
-            <div class="swiper" id="event_slide">
+            <!-- 슬라이드 -->
+            <div class="swiper" id="recommend_slide">
                 <!-- .swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀 -->
                 <div class="swiper-wrapper">
                     <!-- .swiper-slide 슬라이드 개별 한장 부모 -->
-                    <div class="swiper-slide slide1"></div>
-                    <div class="swiper-slide slide2"></div>
-                    <div class="swiper-slide slide3"></div>
-                    <div class="swiper-slide slide4"></div>
-                    <div class="swiper-slide slide5"></div>
-                    <div class="swiper-slide slide6"></div>
+                    <div class="swiper-slide slide1"><a href="#"><img src="./images/recommed1.png" alt=""><span>패스트리에 빠진 에그푸딩</span></a></div>
+                    <div class="swiper-slide slide2"><a href="#"><img src="./images/recommed1.png" alt=""><span>패스트리에 빠진 에그푸딩</span></a></div>
+                    <div class="swiper-slide slide3"><a href="#"><img src="./images/recommed1.png" alt=""><span>패스트리에 빠진 에그푸딩</span></a></div>
+                    <div class="swiper-slide slide4"><a href="#"><img src="./images/recommed1.png" alt=""><span>패스트리에 빠진 에그푸딩</span></a></div>
+                    <div class="swiper-slide slide5"><a href="#"><img src="./images/recommed1.png" alt=""><span>패스트리에 빠진 에그푸딩</span></a></div>
+                    <div class="swiper-slide slide6"><a href="#"><img src="./images/recommed1.png" alt=""><span>패스트리에 빠진 에그푸딩</span></a></div>
                 </div>
                 <!-- 슬라이드 이전, 다음 버튼 -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            </div><!-- #event_slide end -->
-        </div><!-- 이벤트 슬라이드 end -->
-        <!-- 매장찾기 -->
-        <div class="search_shop_wrap">
-            <div class="search_shop_txt">
-                <p>가까운 뚜레쥬르 매장을 찾아보세요</p>
-                <form action="#" method="get" id="search_shop_frm">
-                    <fieldset>  
-                        <legend class="skip">검색영역</legend>
-                        <input type="text" class="search_txt" placeholder="매장명이나 시/군/구 명 입력">
-                        <button type="submit" class="search_btn"><img src="./images/icon/search_w.png" alt="검색"></button>
-                    </fieldset>
-                </form>
-            </div><!-- .search_shop_txt end -->
-        </div><!-- 매장찾기 end -->
-        <!-- 안내 배너 -->
-        <div class="info_bnr_wrap">
-            <a href="#"><img src="./images/info_bnr1.jpg" alt=""></a>
-            <a href="#"><img src="./images/info_bnr2.jpg" alt=""></a>
-            <a href="#"><img src="./images/info_bnr1.jpg" alt=""></a>
-        </div><!-- 안내 배너 end -->
+            </div><!-- 추천제품 슬라이드 end -->
+        </div><!-- 추천제품 슬라이드 영역 전체 end -->
+        <div class="recommend_bg"></div>
+        <!-- 제품 영역 -->
+        <div class="product">
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+            <a href="#"><img src="./images/product1.png" alt=""><span>라라스윗 생우유 아이슈크림</span></a>
+        </div>
     </main>
     <!-- footer -->
     <footer>
@@ -346,8 +277,27 @@
             <span>COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.</span>
         </div>
     </footer><!-- footer end -->
-    <!-- common.js -->
-    <script src="./script/index.js"></script>
+    <!-- script -->
     <script src="./script/common.js"></script>
+    <script>
+        const recommend_slide = new Swiper('#recommend_slide',{
+            autoplay:{delay:3000},
+            speed:800,
+            loop:true, 
+            direction:'horizontal',
+            slidesPerView:'auto',
+            breakpoints:{
+                620:{slidesPerView:2},
+                800:{slidesPerView:3},
+                1000:{slidesPerView:4},
+                1330:{slidesPerView:5},
+            },
+            navigation: {
+            // 슬라이드 버튼 작동하게 하는 속성:값
+            // ( 개별인식가능한 부모명 꼭 작성하기! ) ★★
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',} 
+        })
+    </script>
 </body>
 </html>

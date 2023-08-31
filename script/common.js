@@ -9,8 +9,8 @@ const navBg = document.querySelector('nav .nav_bg')
 console.log(hTop, nav, gnb, sub, subA, navBg)
 
 /* 스크롤 시 header 변경 */
-nav.style.display = 'none'
-window.addEventListener('scroll',function(){
+/* nav.style.display = 'none' */
+/* window.addEventListener('scroll',function(){
     if(window.scrollY > 100){
         hTop.style.background = '#0D4633'
         nav.style.display = 'flex'
@@ -18,7 +18,7 @@ window.addEventListener('scroll',function(){
         hTop.style.background = 'none'
         nav.style.display = 'none'
     }
-})
+}) */
 /* nav 마우스 올리면 sub 보이기 */
 sub_func('none')
 function sub_func(status){
