@@ -84,7 +84,7 @@ footer .f_wrap {}
 footer .f_top {background:#F8F4E9; padding:20px 0; padding-left:15%;}
 footer .f_top a {padding-right:20px;}
 footer .f_top a img {width:80px;}
-footer .f_btm {background:#0D4633; padding:50px 0; padding-left:15%; color:#F8F4E9; }
+footer .f_btm {background:#0D4633; padding:50px; padding-left:15%; color:#F8F4E9; }
 footer .f_btm .fnb {}
 footer .f_btm .fnb li {display:inline-block; margin-right:20px; line-height:30px;}
 footer .f_btm .fnb li a {color:#F8F4E9; font-weight:600;}
@@ -109,10 +109,24 @@ footer .f_btm span {font-size: 0.75019rem;}
     footer .f_btm {padding-left:10%;}
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:640px) {
     header .m_nav {width:600px;}
-    header .m_open_nav h1 {padding-right:100px;}
-    footer {width:620px;}
+    header .m_open_nav h1 {}
+    header .m_open_nav h1 a img {width:230px;}
+    header .m_open_nav .right > a {margin-left:15px;}
+    header .m_open_nav .right > a img {width:20px; height:20px; }
+    header .m_open_nav .m_nav {width:20px; height:20px; display:flex; flex-flow:column nowrap; justify-content:space-between;}
+    header .m_open_nav .m_nav span {width:100%; height:4px; border-radius:5px; background:#fff;}
+    footer {max-width:620px;}
+    footer .f_top a img {width:40px;}
+    footer .f_btm 
+    footer .f_btm .fnb li {display:inline-block; margin-right:20px; line-height:25px;}
+    footer .f_btm .fnb li a {color:#F8F4E9; font-weight:600; font-size:0.75rem;}
+    footer .f_btm p {font-weight:600; line-height:25px; font-size:0.75rem;}
+}
+@media screen and (max-width:400px) {
+    header .m_open_nav h1 a img {width:150px;}
+    
 }
 /* header, footer, 반응형 end ------------------------------------------------*/
 /* main bnr */
@@ -159,7 +173,7 @@ main .recommend_product_wrap .recommend_title img {width:380px;}
 main .recommend_product_wrap .recommend_title span {font-size: 2.36856rem; color: #005c38; font-weight: 600;
 }
 main .recommend_product_wrap .recommend_contents {}
-main .recommend_product_wrap .recommend_contents #recommend_product {max-width:1300px; min-width:600px;}
+main .recommend_product_wrap .recommend_contents #recommend_product {max-width:1300px; }
 main .recommend_product_wrap .recommend_contents #recommend_product .swiper-wrapper {}
 main .recommend_product_wrap .recommend_contents #recommend_product .swiper-wrapper .swiper-slide {}
 main .recommend_product_wrap .recommend_contents #recommend_product .swiper-button-prev::after,
@@ -214,7 +228,6 @@ main .info_bnr_wrap a img {width:100%;}
 }
 /* mobile */
 @media screen and (max-width:940px) {
-    main .notice_wrap {min-width:590px;}
     main .notice_wrap #notice {width:500px;}
     main .search_shop_wrap {height:500px; background:url(../images/search_shop_bg_940.jpg) no-repeat; background-size:cover;}
     main .search_shop_wrap .search_shop_txt {
@@ -223,16 +236,31 @@ main .info_bnr_wrap a img {width:100%;}
     }
 }
 @media screen and (max-width:767px) {
-    main .search_shop_wrap {height:500px; background:url(../images/search_shop_767.jpg) no-repeat; background-size:cover;}
+    main .search_shop_wrap { background:url(../images/search_shop_767.jpg) no-repeat; background-size:cover;}
 }
 @media screen and (max-width:620px) {
     .recommend_title {width:600px;}
-    main .search_shop_wrap {height:500px; background:url(../images/search_shop_767.jpg) no-repeat; background-size:cover;}
+    /* 매장찾기 */
+    main .search_shop_wrap { background:url(../images/search_shop_767.jpg) center no-repeat; background-size:cover;}
     main .search_shop_wrap .search_shop_txt {
         position:relative; top:240px; left:110px; width:400px;
-        display:flex; flex-flow:column nowrap; align-items:center;
+        display:flex; flex-flow:column nowrap; align-items:flex-start; transform:translateX(-20%);
     }
-}
-@media screen and (max-width:400px) {
-    
+    main .search_shop_wrap .search_shop_txt p {margin:30px 0; font-size: 1.33rem; font-weight: 800; color:#0d3125;}
+    /* 공지사항 */
+    main .notice_wrap #notice {width:400px;}
+    main .notice {background:#0d4633; z-index:100; position:relative; display:flex;  flex-flow:column nowrap;  justify-content:center;}
+    main .notice_wrap { height:100px;
+        color:#fff; display:flex; flex-flow:column nowrap; align-items:center; justify-content:center;}
+    main .notice_wrap h2 {} 
+    main .notice_wrap a {position: absolute; right:30%; top:15%;}
+    main .notice_wrap a img {width:20px;}
+    main .notice_wrap #notice .swiper-wrapper .swiper-slide {text-align:left; line-height:50px; margin-left:20px; font-size:0.75rem;}
+    /* 추천제품 */
+    main .recommend_product_wrap {margin-left:10%;}
+    main .recommend_product_wrap .recommend_title {display:flex; align-items:center; justify-content:flex-start; padding:50px 0; margin-left:50px;}
+    main .recommend_product_wrap .recommend_title img {width:150px; margin-right:10px;}
+    main .recommend_product_wrap .recommend_title span {font-size: 1.333rem; color: #005c38; font-weight: 600;
+    }
+    main .recommend_product_wrap .recommend_contents #recommend_product {max-width:300px;}
 }

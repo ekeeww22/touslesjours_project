@@ -28,10 +28,12 @@ main .login_wrap_bg .login_wrap .id_save label #id_save {}
 main .login_wrap_bg .login_wrap .id_save .user_info {}
 main .login_wrap_bg .login_wrap .id_save .user_info a {font-weight: 600; padding-left:10px;}
 /* 통합 회원가입 안내 */
-main .join_info {max-width:900px; margin:0 auto; margin:60px auto; color:#fff; display:flex; flex-flow:column nowrap; align-items:center; }
-main .join_info h2 {font-size: 1.75rem; font-weight: 600; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); align-self: start; margin-left:10%;}
-main .join_info p {margin:20px 20px 30px; line-height:30px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-weight: 600; align-self: start; margin-left:10%;}
-main .join_info a {padding:20px 25px; background:#ffffff; border:1px solid #c7c7c7; display:inline-block; font-weight:600; }
+main .join_info {
+    padding:60px 0; border-radius:20px;
+    max-width:900px; margin:60px auto; color:#000; display:flex; flex-flow:column nowrap; align-items:center; }
+main .join_info h2 {font-size: 1.75rem; font-weight: 600;  align-self: start; margin-left:10%;}
+main .join_info p {margin:20px 20px 30px; line-height:30px;  font-weight: 600; align-self: start; margin-left:10%;}
+main .join_info a {padding:20px 25px; background:#F8F4E9; display:inline-block; font-weight:600; }
 
 /* 반응형 */
 @media screen and (max-width:940px){
@@ -39,7 +41,42 @@ main .join_info a {padding:20px 25px; background:#ffffff; border:1px solid #c7c7
     main .login_wrap_bg {padding-top:140px}
 }
 @media screen and (max-width:640px){
-    main .join_info {margin-right: 30px; width:620px;}
-    main .login_wrap_bg {min-width:640px; }
+    main .join_info h2 {font-size: 1.33rem; font-weight: 600;  align-self: start; margin-left:10%;}
+    main .join_info {}
+    main .login_wrap_bg {margin-left:10%; }
+    main .login_wrap_bg > h1 {z-index:100; position:relative; transform:translate(-90px, 40px); font-size:1.5rem; color:#0d4633; font-weight:800; }
+main .login_wrap_bg .login_wrap {
+    background:#F8F4E9; width:300px; padding:50px 20px 20px; border-radius:10px;
+}
+main .login_wrap_bg .login_wrap #loginFrm {}
+main .login_wrap_bg .login_wrap #loginFrm fieldset {display:flex; justify-content:space-between;}
+main .login_wrap_bg .login_wrap #loginFrm fieldset ul {}
+main .login_wrap_bg .login_wrap #loginFrm fieldset ul li {}
+main .login_wrap_bg .login_wrap #loginFrm fieldset ul li input {width:180px; padding:5px; border-radius:5px;}
+main .login_wrap_bg .login_wrap #loginFrm fieldset ul li input::placeholder {color:#999; font-size:0.75rem; }
+main .login_wrap_bg .login_wrap #loginFrm fieldset ul .id_input {margin-bottom:10px;}
+main .login_wrap_bg .login_wrap #loginFrm fieldset ul .pw_input {}
+main .login_wrap_bg .login_wrap #loginFrm fieldset #login_btn {
+    color:#fff; background:#0d4633; padding:10px 15px; border-radius:5px; margin-left:10px; font-size:0.75rem;
+}
+main .login_wrap_bg .login_wrap .id_save {display:flex; justify-content:space-between; margin-top:10px; }
+main .login_wrap_bg .login_wrap .id_save label {}
+main .login_wrap_bg .login_wrap .id_save label input {appearance:none;}
+main .login_wrap_bg .login_wrap .id_save label input:checked+span { 
+    background:url(../images/icon/check.png) no-repeat 0; background-size:contain; }
+main .login_wrap_bg .login_wrap .id_save label span {font-size:0.75rem; height:20px;
+    background:url(../images/icon/uncheck.png) no-repeat 0; background-size:contain; padding-left:20px;
+    font-weight: 600;}
+main .login_wrap_bg .login_wrap .id_save label #id_save {}
+main .login_wrap_bg .login_wrap .id_save .user_info {}
+main .login_wrap_bg .login_wrap .id_save .user_info a {font-weight: 600; padding-left:10px; font-size:0.75rem;}
 
+}
+@media screen and (max-width:400px) {
+    main .login_wrap_bg {padding-top:100px}
+    main {height:700px; background:#F8F4E9;}
+    main .join_info h2 {font-size: 1rem; font-weight: 600;  align-self: start; margin-left:10%;}
+    main .join_info {margin:0; padding-top:30px; }
+    main .join_info p {font-size: 0.75rem; line-height:30px;}
+    main .join_info a {background: #000; color:#fff; border-radius: 5px;}
 }

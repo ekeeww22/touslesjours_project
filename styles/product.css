@@ -37,8 +37,9 @@ main .product a {display:flex; flex-flow:column nowrap; align-items:center; padd
 main .product a img {width:180px;}
 main .product a span {margin-top:20px;}
 /* 반응형 */
+
 @media screen and (max-width:1200px) {
-    
+    main .breadcrumbs {padding:200px 20px 20px;}
     main #category {margin:60px 30px;}
     /* main .recommend_slide_wrap #recommend_slide, main .product, main #category .contents {min-width:600px;} */
     main #category .title {}

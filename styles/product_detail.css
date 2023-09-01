@@ -45,8 +45,10 @@ main .product_info_wrap .info_wrap .alergy dt {}
 main .product_info_wrap .info_wrap .alergy dd {}
 main .product_info_wrap .info_wrap span {margin-top:25px; display:block;}
 main .list_btn {padding:15px 40px; border:1px solid #000; display:inline-block; margin-bottom:80px;}
+
 /* 반응형 */
 @media screen and (max-width:1030px) {
+    main .breadcrumbs {padding:200px 20px 20px;}
     main .product_info_wrap {flex-flow:column nowrap; align-items:center;}
 }
 @media screen and (max-width:940px) {
@@ -58,4 +60,13 @@ main .list_btn {padding:15px 40px; border:1px solid #000; display:inline-block; 
     main .product_info_wrap .info_wrap .info_contents {
         display:flex; justify-content:space-between;  padding:25px 0;}
     main .product_info_wrap .info_wrap .info_contents dl {width:150px;}
+}
+@media screen and (max-width:470px) {
+    main .product_info_wrap .img img {width:200px; height:200px;}
+    main .product_info_wrap .info_wrap {width:350px;}
+    main .product_info_wrap .info_wrap .product_title h1 {
+        font-size: 1.33rem; font-weight: 600; 
+    }
+    main .product_info_wrap .info_wrap span {margin-top:25px; display:block; font-size:0.75rem;}
+    
 }
