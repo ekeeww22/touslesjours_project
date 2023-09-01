@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터 안내 | 뚜레쥬르</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/service.css">
+</head>
+<body>
+    <!-- quick menu -->
+    <div class="quick_menu">
+        <a href="./map.html" class="store_info"><img src="./images/icon/map.png" alt=""><span>매장안내</span></a>
+        <a href="#" class="business_info"><img src="./images/icon/bakery.png" alt=""><span>창업안내</span></a>
+        <a href="#" class="baker_info"><img src="./images/icon/baker.png" alt=""><span>기사<br>채용안내</span></a>
+        <a href="./service.html" class="customer_sevice"><img src="./images/icon/customer_service.png" alt=""><span>고객센터</span></a>
+        <a href="#" class="top_btn"><img src="./images/icon/top_b.png" alt=""><span>TOP</span></a>
+    </div>
+    <!-- header -->
+    <header>
+        <div class="h_top">
+            <div class="header_sns">
+                <a href="#"><img src="./images/icon/facebook_w.png" alt="facebook"></a>
+                <a href="#"><img src="images/icon/twitter_w.png" alt="twitter"></a>
+                <a href="#"><img src="./images/icon/instagram_w.png" alt="instagram"></a>
+            </div>
+            <h1><a href="./index.html"><img src="./images/logo_w.png" alt="뚜레쥬르"></a></h1>
+            <div class="h_top_r">
+                <a href="./login.html">login</a>
+                <form action="#" method="get" id="searchFrm">
+                    <fieldset>
+                        <legend class="skip">검색양식</legend>
+                        <input type="text" id="searchTxt" placeholder="상품명을 입력해주세요">
+                        <button type="submit" id="searchBtn"><img src="./images/icon/search_w.png" alt="검색"></button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">브랜드 스토리</a>
+                    <ul class="sub">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">뚜레쥬르 광고</a></li>
+                        <li><a href="#">뚜레쥬르 재료 이야기</a></li>
+                        <li><a href="#">글로벌 뚜레쥬르 </a></li>
+                        <li><a href="#">뚜레쥬르 라뜰리에</a></li>
+                        <li><a href="#">뚜레쥬르 착한빵</a></li>
+                        <li><a href="#">뉴스 & 공지사항</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">새로워진 뚜레쥬르</a>
+                    <ul class="sub">
+                        <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                        <li><a href="#">건강한 데일리 베이커리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품 안내</a>
+                    <ul class="sub">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">빵</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">델리</a></li>
+                        <li><a href="#">선물</a></li>
+                        <li><a href="#">디저트&스낵</a></li>
+                        <li><a href="#">음료</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트&멤버십</a>
+                    <ul class="sub">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">이벤트 당첨자</a></li>
+                        <li><a href="#">CJ ONE 멤버십</a></li>
+                        <li><a href="#">제휴 혜택</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">앱&온라인 쇼핑몰</a>
+                    <ul class="sub">
+                        <li><a href="#">뚜레쥬르 앱</a></li>
+                        <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                        <li><a href="#">꽃 & 케이크 택배 배송</a></li>
+                        <li><a href="#">대량 구매 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav_bg"></div>
+        </nav>
+        <!-- mobile open nav -->
+        <div class="m_open_nav">
+            <h1><a href="#"><img src="./images/logo_w.png" alt=""></a></h1>
+            <div class="right">
+                <a href="#" class="login"><img src="./images/icon/login_w.png" alt=""></a>
+                <a href="#" class="search_shop"><img src="./images/icon/map_w.png" alt=""></a>
+                <a href="#" class="m_nav"><span></span><span></span><span></span></a>
+            </div>
+        </div>
+        <div class="m_open_menu">
+            <button type="button" class="close_btn"><img src="./images/icon/close.png" alt=""></button>
+            <form action="#" method="get" id="open_searchFrm">
+                <fieldset>
+                    <legend class="skip">검색양식</legend>
+                    <input type="text" id="searchTxt" placeholder="제품명을 입력해주세요">
+                    <button type="submit" id="searchBtn"><img src="./images/icon/search_b.png" alt="검색"></button>
+                </fieldset>
+            </form>
+            <ul class="gnb">
+                <li><a href="#">브랜드 스토리</a>
+                    <ul class="sub">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">뚜레쥬르 광고</a></li>
+                        <li><a href="#">뚜레쥬르 재료 이야기</a></li>
+                        <li><a href="#">글로벌 뚜레쥬르 </a></li>
+                        <li><a href="#">뚜레쥬르 라뜰리에</a></li>
+                        <li><a href="#">뚜레쥬르 착한빵</a></li>
+                        <li><a href="#">뉴스 & 공지사항</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">새로워진 뚜레쥬르</a>
+                    <ul class="sub">
+                        <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                        <li><a href="#">건강한 데일리 베이커리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품 안내</a>
+                    <ul class="sub">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">빵</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">델리</a></li>
+                        <li><a href="#">선물</a></li>
+                        <li><a href="#">디저트&스낵</a></li>
+                        <li><a href="#">음료</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트&멤버십</a>
+                    <ul class="sub">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">이벤트 당첨자</a></li>
+                        <li><a href="#">CJ ONE 멤버십</a></li>
+                        <li><a href="#">제휴 혜택</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">앱&온라인 쇼핑몰</a>
+                    <ul class="sub">
+                        <li><a href="#">뚜레쥬르 앱</a></li>
+                        <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                        <li><a href="#">꽃 & 케이크 택배 배송</a></li>
+                        <li><a href="#">대량 구매 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="open_menu_sns">
+                <a href="#"><img src="./images/icon/facebook_b.png" alt="페이스북"></a>
+                <a href="#"><img src="./images/icon/twitter_b.png" alt="트위터"></a>
+                <a href="#"><img src="./images/icon/instagram.png" alt="인스타그램"></a>
+            </div>
+        </div>
+    </header><!-- header end -->
+    <!-- main -->
+    <main>
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="./index.html" class="main_page"><img src="./images/icon/home.png" alt="메인으로가기"></a>
+            <img src="./images/icon/next_b.png" alt="">
+            <a href="#" class="product_info_page">고객센터</a>
+        </div><!-- breadcrumbs -->
+        <!-- 메인 배너 -->
+        <div class="main_bnr"></div>
+        <div class="contents">
+            <div class="service_wrap">
+                <div class="qna">
+                    <h1>FAQ</h1>
+                    <p>고객님께서 자주 문의하시는 내용에 대한
+                        답변을 준비하였습니다.</p>
+                    <a href="#">바로가기</a>
+                </div>
+                <div class="online">
+                    <h1>온라인  상담</h1>
+                    <p>홈페이지를 통해서 온라인 상담을
+                        24시간 접수를 받고 있습니다.</p>
+                    <a href="#">바로가기</a>
+                </div>
+                <div class="online_list">
+                    <h1>온라인 상담 내역</h1>
+                    <p>홈페이지를 통해 온라인 상담한 내역을
+                        확인할 수 있습니다.</p>
+                    <a href="#">바로가기</a>
+                </div>
+            </div><!-- 상담 영역 end -->
+            <!-- 보상기준 표 -->
+            <div class="table">
+                <table>
+                    <colgroup>
+                        <col style="width:150px;">
+                        <col>
+                        <col style="width:320px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">피해유형</th>
+                            <th scope="col">보상기준</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>식품</td>
+                            <td>함량, 용량부족, 부패변질, 유통기간경과, 이물혼입</td>
+                            <td>제품교환 또는 구입가 환불</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="service_info">
+                <h2>접수안내</h2>
+                <p>
+                    - 로그인 후 1시간 경과 시 고객님의 개인정보 보호를 위해 자동 로그아웃 됩니다.<br>
+                    - 욕설, 광고, 타인의 명예를 훼손하는 자료 등을 올리시거나 반복적으로 비난성 글을 올리시는 회원님의 게시물은 별도 통보 없이 임의 삭제되거나, 답변드리지 않을 수 있습니다.<br>
+                    - 매장과 관련된 내용의 경우, 해당 가맹점에 작성자의 개인정보를 전달할 수 있습니다.<br>
+                    - 접수해 주신 내용은 공정거래위원회 고시 소비자 분쟁 해결기준에 의거하여 처리됩니다.
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="f_top">
+            <a href="#"><img src="./images/f_logo_cjfood.png" alt="cj푸드빌"></a>
+            <a href="#"><img src="./images/f_logo_vips.png" alt="vips"></a>
+            <a href="#"><img src="./images/f_logo_the_place.png" alt="더플레이스"></a>
+            <a href="#"><img src="./images/f_logo_noodle.png" alt="제일제면소"></a>
+            <a href="#"><img src="./images/f_logo_n_seoul_tower.png" alt="n서울타워"></a>
+        </div>
+        <div class="f_btm">
+            <ul class="fnb">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">위치기반서비스 이용약관</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">기사 채용안내</a></li>
+                <li><a href="#">창업안내</a></li>
+                <li><a href="#">윤리신고센터</a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <p>고객센터 : 1577 - 0700 / 9시 - 18시 (점심 12시 - 13시) ※ 주말, 공휴일 제외</p>
+            <address>상호명 : CJ푸드빌(주)   주소 : (우) 04555 서울시 중구 마른내로34(초동 106-9번지) KT&G을지로타워 3,9-11층 CJ푸드빌(주)<br>
+                통신판매업종신고증 제 2011-서울중구-0771호<a href="#" class="company_info">사업자정보확인</a>호스팅제공자 : CJ올리브네트웍스(주)<br>
+                사업자등록번호 : 312-81-42519   개인정보보호책임자 : 김재완   대표이사 : 김찬호   <a href="help_master@cj.net" class="mail">대표 이메일 : help_master@cj.net</a></address>
+            <span>COPYRIGHT 2023©CJ Foodville ALL RIGHT RESERVED.</span>
+        </div>
+    </footer><!-- footer end -->
+    <!-- script -->
+    <script src="./script/common.js"></script>
+</body>
+</html>

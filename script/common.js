@@ -57,24 +57,32 @@ const openNavBtn = document.querySelector('.right > .m_nav')
 const openMenu = document.querySelector('.m_open_menu')
 const openMenuGnb = document.querySelectorAll('.m_open_menu > .gnb > li')
 const openMenuSub = document.querySelectorAll('.m_open_menu > .gnb > li > .sub ')
-const openMenuSubA = document.querySelectorAll('.m_open_menu > .gnb > li > .sub > li')
 const closeBtn = document.querySelector('.close_btn')
 console.log(openNavBtn, openMenu, openMenuGnb, openMenuSub)
 
 openMenu.classList.toggle('showHide')
-openNavBtn.addEventListener('click',function(){
-    
+openNavBtn.addEventListener('click',function(e){
+    e.preventDefault()
     openMenu.classList.toggle('showHide')
 })
-closeBtn.addEventListener('click',function(){
+closeBtn.addEventListener('click',function(e){
     openMenu.classList.toggle('showHide')
+    e.preventDefault()
 })
+/* quick menu - top btn */
+const topBtn = document.querySelector('.quick_menu .top_btn')
+console.log(topBtn)
+topBtn.addEventListener('click',function(){
+    window.scrollTo({left:0, top:0})
+})
+
+/* open menu에서 메인메뉴 클릭 시 서브메뉴가 나온다 */
 for(let i of openMenuSub){
     i.style.display = 'none'
 }
 openMenuGnb.forEach(function(t, i){
-    t.addEventListener('click',function(){
+    t.addEventListener('click',function(e){
         openMenuSub[i].style.display = 'block'
+        e.preventDefault()
     })
-    
 })

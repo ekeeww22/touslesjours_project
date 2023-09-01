@@ -1,7 +1,7 @@
 /* quick menu ---------------------------------------------------- */
 .quick_menu {
     z-index:999;
-    position:fixed; right:30px; top:500px;
+    position:fixed; right:30px; bottom:5%;
     background:#F8F4E9; padding:20px 15px; border-radius:10px;
 }
 .quick_menu a {display:flex; flex-flow:column nowrap; align-items:center; margin-bottom:20px;}

@@ -1,0 +1,40 @@
+/* main */
+main {max-width:1200px; margin:0 auto;  }
+main .contents {max-width:900px; margin:0 auto;}
+/* breadcrumbs */
+main .breadcrumbs {  padding:200px 0 20px; display:flex; align-items:center; justify-content:flex-end; border-bottom:1px solid #C7C7C7;}
+main .breadcrumbs > a {}
+main .breadcrumbs > a > img {width:20px; height:20px;}
+main .breadcrumbs > img {width:15px; height:15px; margin:0 5px;}
+main .breadcrumbs > span {color:#4E4E4E;}
+/* 메인 배너 */
+main .main_bnr {height:300px; background:url(../images/service_bg.png); background-size:cover; margin:60px 0;}
+/* contents */
+main .contents {}
+/* 고객센터 */
+main .contents .service_wrap {display:flex; justify-content:space-between;}
+main .contents .service_wrap > div {text-align:center; width:280px;}
+main .contents .service_wrap > div h1 {font-size: 1.77688rem; font-weight: 600;}
+main .contents .service_wrap > div p {margin:20px 0; line-height: 20px;}
+main .contents .service_wrap > div a {display:inline-block; border:1px solid #000; padding:15px 25px;}
+main .contents .service_wrap > div:nth-child(2) a {background:#0d4633; color:#fff; border:none;}
+/* 보상기준표 */
+main .table {margin:80px 0;}
+main .table table {width:100%; border-bottom:1px solid #f8f4e9; text-align:center; }
+main .table table thead {height:60px; background:#f8f4e9;}
+main .table table thead tr {}
+main .table table thead tr th {text-align:center; font-weight:600; color:#222;}
+main .table table tbody {}
+main .table table tbody tr {}
+main .table table tbody tr td {height:60px; color:#222;}
+/* 접수안내 */
+main .contents .service_info {}
+main .contents .service_info h2 {font-weight: 600; font-size: 1.77688rem;}
+main .contents .service_info p {line-height:30px; margin:25px 0 80px;}
+/* 반응형 */
+@media screen and (max-width:940px)  {
+    main .contents .service_wrap {display:flex; flex-flow:column nowrap; align-items:center; }
+    main .contents .service_wrap > div {margin-bottom:50px;}
+    main .table table {min-width:650px;}
+    main .contents .service_info {margin:0 20px; min-width:610px;}
+}

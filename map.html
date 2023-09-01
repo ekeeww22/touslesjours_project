@@ -20,10 +20,10 @@
 <body>
     <!-- quick menu -->
     <div class="quick_menu">
-        <a href="#" class="store_info"><img src="./images/icon/map.png" alt=""><span>매장안내</span></a>
+        <a href="./map.html" class="store_info"><img src="./images/icon/map.png" alt=""><span>매장안내</span></a>
         <a href="#" class="business_info"><img src="./images/icon/bakery.png" alt=""><span>창업안내</span></a>
         <a href="#" class="baker_info"><img src="./images/icon/baker.png" alt=""><span>기사<br>채용안내</span></a>
-        <a href="#" class="customer_sevice"><img src="./images/icon/customer_service.png" alt=""><span>고객센터</span></a>
+        <a href="./service.html" class="customer_sevice"><img src="./images/icon/customer_service.png" alt=""><span>고객센터</span></a>
         <a href="#" class="top_btn"><img src="./images/icon/top_b.png" alt=""><span>TOP</span></a>
     </div>
     <!-- header -->
@@ -34,9 +34,9 @@
                 <a href="#"><img src="images/icon/twitter_w.png" alt="twitter"></a>
                 <a href="#"><img src="./images/icon/instagram_w.png" alt="instagram"></a>
             </div>
-            <h1><a href="#"><img src="./images/logo_w.png" alt="뚜레쥬르"></a></h1>
+            <h1><a href="./index.html"><img src="./images/logo_w.png" alt="뚜레쥬르"></a></h1>
             <div class="h_top_r">
-                <a href="#">login</a>
+                <a href="./login.html">login</a>
                 <form action="#" method="get" id="searchFrm">
                     <fieldset>
                         <legend class="skip">검색양식</legend>
@@ -170,15 +170,61 @@
     <main>
         <!-- breadcrumbs -->
         <div class="breadcrumbs">
-            <a href="#" class="main_page"><img src="./images/icon/home.png" alt="메인으로가기"></a>
+            <a href="./index.html" class="main_page"><img src="./images/icon/home.png" alt="메인으로가기"></a>
             <img src="./images/icon/next_b.png" alt="">
-            <a href="#" class="product_info_page">제품안내</a>
-            <img src="./images/icon/next_b.png" alt="">
-            <span class="now_page">빵</span>
-            <img src="./images/icon/next_b.png" alt="">
-            <a href="#" class="product_info_page">파이/패스트리</a>
+            <a href="#" class="product_info_page">매장안내</a>
         </div><!-- breadcrumbs -->
-
+        <div class="map_wrap">
+            <div id="map"><!-- 지도삽입위치 --></div>
+            <div class="search_frm_wrap">
+                <div class="top">
+                    <div class="title"><img src="./images/logo_w.png" alt="뚜레쥬르"><span>매장안내</span></div>
+                    <form action="#" method="get" id="searchFrm">
+                        <fieldset>
+                            <legend class="skip">검색양식</legend>
+                            <input type="text" id="searchTxt" placeholder="매장명 또는 주소">
+                            <button type="submit" id="searchBtn"><img src="./images/icon/search_b.png"></button>
+                        </fieldset>
+                    </form>
+                </div>
+                <p class="search_result">매장 검색결과<span>7</span></p>
+                <div class="store_list">
+                    <div href="#" class="store">
+                        <a href="#">
+                            <em>뚜레쥬르 카페강남대로</em>
+                            <span>도로명주소 : 서울특별시 강남구 강남대로 524 (논현동,건일빌딩) 1층<br>
+                                지번주소 : 서울특별시 강남구 논현동 143-15 (건일빌딩) 1층<br>02-545-3644</span>
+                        </a>
+                        <a href="#" class="store_info">매장정보</a>
+                    </div>
+                    <div href="#" class="store">
+                        <a href="#">
+                            <em>뚜레쥬르 카페대치</em>
+                            <span>도로명주소 : 서울시 강남구 도곡로 446 1층 뚜레쥬르<br>
+                                지번주소 : 대치동 1021-1 1층 뚜레쥬르<br>010-6497-0920</span>
+                        </a>
+                        <a href="#" class="store_info">매장정보</a>
+                    </div>
+                    <div href="#" class="store">
+                        <a href="#">
+                            <em>뚜레쥬르 대청역</em>
+                            <span>	
+                                도로명주소 : 서울특별시 강남구 일원로 37 (일원동,하나은행 일원중앙) 1층 뚜레쥬르<br>
+                                지번주소 : 서울특별시 강남구 일원동 684-1 (하나은행 일원중앙) 1층 뚜레쥬르<br>02-2226-9887</span>
+                        </a>
+                        <a href="#" class="store_info">매장정보</a>
+                    </div>
+                    <div href="#" class="store">
+                        <a href="#">
+                            <em>뚜레쥬르 역삼역</em>
+                            <span>도로명주소 : 서울특별시 강남구 테헤란로20길 9 (역삼동,동궁빌딩) 1층<br>
+                                지번주소 : 서울특별시 강남구 역삼동 736-17 (동궁빌딩) 1층<br>070-4184-4697</span>
+                        </a>
+                        <a href="#" class="store_info">매장정보</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- footer -->
     <footer>
@@ -211,5 +257,21 @@
     </footer><!-- footer end -->
     <!-- script -->
     <script src="./script/common.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3c61125f978aaedcf5ad3b9696be9b81"></script>
+    <script>
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.55674005,127.0060045), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var markerPosition  = new kakao.maps.LatLng(37.55674005,127.0060045);
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+    </script>
 </body>
 </html>

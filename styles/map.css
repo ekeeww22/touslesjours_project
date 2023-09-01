@@ -1,0 +1,37 @@
+/* main */
+main {max-width:1200px; margin:0 auto;}
+/* breadcrumbs */
+main .breadcrumbs { width:100%; padding:200px 0 20px; display:flex; align-items:center; justify-content:flex-end; border-bottom:1px solid #C7C7C7;}
+main .breadcrumbs > a {}
+main .breadcrumbs > a > img {width:20px; height:20px;}
+main .breadcrumbs > img {width:15px; height:15px; margin:0 5px;}
+main .breadcrumbs > span {color:#4E4E4E;}
+/* map_wrap */
+main .map_wrap {position:relative;}
+main .map_wrap #map {background:aqua; width:100%; height:670px; margin:60px 0; z-index: 1; }
+main .map_wrap .search_frm_wrap {
+    z-index:888; position:absolute; top:10%; left:5%;
+    background:#0D4633; width:285px; height:510px; 
+}
+main .map_wrap .search_frm_wrap .top { border-bottom:1px solid #fff1cb; display:flex; flex-flow:column nowrap; align-items: center; padding:20px 0;}
+main .map_wrap .search_frm_wrap .title {display:flex; align-items: center; margin-bottom:20px; }
+main .map_wrap .search_frm_wrap .title img {width:140px; margin-right:10px;;}
+main .map_wrap .search_frm_wrap .title span {
+    font-size: 1.3125rem; font-weight: 700; color:#fff;}
+main .map_wrap .search_frm_wrap #searchFrm {}
+main .map_wrap .search_frm_wrap #searchFrm fieldset {
+    display:flex; align-items: center; justify-content:space-between;
+    background:#fff; padding:8px; border-radius: 5px; width:250px;
+}
+main .map_wrap .search_frm_wrap #searchFrm fieldset #searchTxt {}
+main .map_wrap .search_frm_wrap #searchFrm fieldset #searchBtn {background:none;}
+main .map_wrap .search_frm_wrap #searchFrm fieldset #searchBtn img {width:20px; height:20px;}
+main .map_wrap .search_frm_wrap .search_result {margin:15px 20px; align-self: start; color:#fff;}
+main .map_wrap .search_frm_wrap .search_result span {color:#FF4444; margin-left:10px;}
+main .map_wrap .search_frm_wrap .store_list {background: #fff; height:320px; overflow: auto; padding-top:20px; border-top:2px solid #888;}
+main .map_wrap .search_frm_wrap .store_list .store {display:block; background:#fff; padding:10px 15px; border-top:1px solid #888;}
+main .map_wrap .search_frm_wrap .store_list .store:last-of-type {border-bottom:1px solid #888;}
+main .map_wrap .search_frm_wrap .store_list .store a {}
+main .map_wrap .search_frm_wrap .store_list .store > a em {font-weight: 600; line-height:30px;}
+main .map_wrap .search_frm_wrap .store_list .store a span {display:block; line-height: 22px; font-size: 0.8rem;}
+main .map_wrap .search_frm_wrap .store_list .store .store_info {line-height: 30px; color:#888;}

@@ -1,7 +1,7 @@
 /* quick menu ---------------------------------------------------- */
 .quick_menu {
     z-index:999;
-    position:fixed; right:30px; top:500px;
+    position:fixed; right:30px; bottom:5%;
     background:#F8F4E9; padding:20px 15px; border-radius:10px;
 }
 .quick_menu a {display:flex; flex-flow:column nowrap; align-items:center; margin-bottom:20px;}
@@ -46,8 +46,8 @@ header nav .nav_bg {background: rgba(13, 70, 51, 0.80); width:100%; height:270px
 header .showHide {display:none !important;}
 header .X {transform:translateX(0);}
 /* ----------------------------------------mobile open nav---------------------------------------------------------------------- */
-header .m_open_nav {
-    opacity:0; display:flex; height:70px; background: #0D4633; align-items:center; justify-content:space-between;
+header .m_open_nav { display:none;
+    height:70px; background: #0D4633; align-items:center; justify-content:space-between;
     padding:0 20px;
 }
 header .m_open_nav h1 {}
@@ -64,7 +64,8 @@ header .m_open_menu .close_btn img {width:25px; height:25px;}
 header .m_open_menu {background:#F8F4E9; position:fixed; top:70px; right:0; padding:25px;}
 header .m_open_menu > #open_searchFrm {padding-bottom:20px; border-bottom:1px solid #000;}
 header .m_open_menu > #open_searchFrm fieldset {display:flex; align-items:center;}
-header .m_open_menu > #open_searchFrm fieldset #searchTxt {width:170px; padding:5px;}
+header .m_open_menu > #open_searchFrm fieldset #searchTxt {width:170px; padding:5px; background:rgba(255,255,255,0.5);}
+header .m_open_menu > #open_searchFrm fieldset #searchTxt::placeholder {olor:#999}
 header .m_open_menu > #open_searchFrm fieldset #searchBtn {background:none; margin-left:10px; }
 header .m_open_menu > #open_searchFrm fieldset #searchBtn img {width:20px; height:20px;}
 header .m_open_menu > .gnb {padding:20px 0;}
@@ -100,10 +101,11 @@ footer .f_btm span {font-size: 0.75019rem;}
 }
 /* mobile */
 @media screen and (max-width:940px) {
+    header {height:70px;}
     header .h_top {display:none;}
     header nav {display:none;}
     .quick_menu {display:none;}
-    header .m_open_nav {opacity:100%;}
+    header .m_open_nav {display:flex;}
     /* main .search_shop_wrap {} */
     footer .f_top,
     footer .f_btm {padding-left:10%;}
