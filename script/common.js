@@ -9,8 +9,8 @@ const navBg = document.querySelector('nav .nav_bg')
 console.log(hTop, nav, gnb, sub, subA, navBg)
 
 /* 스크롤 시 header 변경 */
-/* nav.style.display = 'none' */
-/* window.addEventListener('scroll',function(){
+/* nav.style.display = 'none'
+window.addEventListener('scroll',function(){
     if(window.scrollY > 100){
         hTop.style.background = '#0D4633'
         nav.style.display = 'flex'
@@ -77,12 +77,17 @@ topBtn.addEventListener('click',function(){
 })
 
 /* open menu에서 메인메뉴 클릭 시 서브메뉴가 나온다 */
+
+
 for(let i of openMenuSub){
-    i.style.display = 'none'
-}
+            i.style.display = 'none'
+        }
 openMenuGnb.forEach(function(t, i){
     t.addEventListener('click',function(e){
-        openMenuSub[i].style.display = 'block'
         e.preventDefault()
+        for(let i of openMenuSub){
+            i.style.display = 'none'
+        }
+        openMenuSub[i].style.display = 'block'
     })
 })

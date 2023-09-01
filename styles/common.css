@@ -19,12 +19,13 @@ header .h_top { z-index:997;
     header .h_top > h1 {width:300px; height:40px; margin:0 300px; }
     header .h_top h1 a {}
     header .h_top h1 a img {width:100%;}
-header .h_top .h_top_r {display:flex; align-items:center;}
-header .h_top .h_top_r a {color:#fff; padding:8px 10px; border:1px solid #fff; margin-right:20px;}
-/* 로그인, 검색영역 */
-header .h_top .h_top_r #searchFrm {}
-header .h_top .h_top_r #searchFrm fieldset {border:1px solid #F8F4E9; display:flex; align-items:center; padding:0 10px;}
-header .h_top .h_top_r #searchFrm fieldset input {height:34px; background:none;}
+    /* 로그인, 검색영역 */
+    header .h_top .h_top_r {display:flex; align-items:center;}
+    header .h_top .h_top_r a {color:#062219; font-weight:800; padding:10px 12px; background:#fff; margin-right:20px; border-radius:5px;}
+    header .h_top .h_top_r #searchFrm {}
+header .h_top .h_top_r #searchFrm fieldset {border:1px solid #F8F4E9; display:flex; align-items:center; padding:0 10px; border-radius:5px;}
+header .h_top .h_top_r #searchFrm fieldset input {height:38px; background:none; color:#fff; }
+header .h_top .h_top_r #searchFrm fieldset input::placeholder {color:#fff;}
 header .h_top .h_top_r #searchFrm fieldset #searchBtn {width:20px; height:20px; background:none;}
 header .h_top .h_top_r #searchFrm fieldset #searchBtn img {width:100%;}
 /* nav */
@@ -59,9 +60,9 @@ header .m_open_nav .right > a img {width:30px; height:30px; }
 header .m_open_nav .m_nav {width:30px; height:30px; display:flex; flex-flow:column nowrap; justify-content:space-between;}
 header .m_open_nav .m_nav span {width:100%; height:6px; border-radius:5px; background:#fff;}
 /* ----------------------------------------mobile open menu---------------------------------------------------------------------- */
-header .m_open_menu .close_btn {position:absolute; left:-40px; background: none;}
-header .m_open_menu .close_btn img {width:25px; height:25px;}
-header .m_open_menu {background:#F8F4E9; position:fixed; top:70px; right:0; padding:25px;}
+header .m_open_menu {background:#F8F4E9; position:fixed; top:70px; right:0; padding:25px; border-radius:0 0 0 10px;}
+header .m_open_menu .close_btn {background: none;}
+header .m_open_menu .close_btn img {width:30px; height:30px;}
 header .m_open_menu > #open_searchFrm {padding-bottom:20px; border-bottom:1px solid #000;}
 header .m_open_menu > #open_searchFrm fieldset {display:flex; align-items:center;}
 header .m_open_menu > #open_searchFrm fieldset #searchTxt {width:170px; padding:5px; background:rgba(255,255,255,0.5);}
@@ -97,10 +98,12 @@ footer .f_btm span {font-size: 0.75019rem;}
 
 /* tablet */
 @media screen and (max-width:1340px) {
+    main .breadcrumbs {padding:200px 20px 20px;}
     header .h_top h1 {width:300px; height:40px; margin:0 100px;}
 }
 /* mobile */
 @media screen and (max-width:940px) {
+    main .breadcrumbs {padding:100px 20px 20px;}
     header {height:70px;}
     header .h_top {display:none;}
     header nav {display:none;}
@@ -111,8 +114,21 @@ footer .f_btm span {font-size: 0.75019rem;}
     footer .f_btm {padding-left:10%;}
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:640px) {
     header .m_nav {width:600px;}
-    header .m_open_nav h1 {padding-right:100px;}
-    footer {width:620px;}
+    header .m_open_nav h1 {}
+    header .m_open_nav h1 a img {width:230px;}
+    header .m_open_nav .right > a {margin-left:15px;}
+    header .m_open_nav .right > a img {width:20px; height:20px; }
+    header .m_open_nav .m_nav {width:20px; height:20px; display:flex; flex-flow:column nowrap; justify-content:space-between;}
+    header .m_open_nav .m_nav span {width:100%; height:4px; border-radius:5px; background:#fff;}
+    footer {max-width:620px;}
+    footer .f_top a img {width:40px;}
+    footer .f_btm .fnb li {display:inline-block; margin-right:20px; line-height:25px;}
+    footer .f_btm .fnb li a {color:#F8F4E9; font-weight:600; font-size:0.75rem;}
+    footer .f_btm p {font-weight:600; line-height:25px; font-size:0.75rem;}
+}
+@media screen and (max-width:400px) {
+    header .m_open_nav h1 a img {width:150px;}
+    
 }
