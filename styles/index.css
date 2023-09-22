@@ -1,3 +1,4 @@
+body {overflow-x:hidden ;}
 /* quick menu ---------------------------------------------------- */
 .quick_menu {
     z-index:999;
@@ -134,7 +135,7 @@ footer .f_btm span {font-size: 0.75019rem;}
 main {margin:0 auto;}
 main .main_bnr {
     z-index:102; position: relative;
-    max-width:100%; height:80vh;  background:url(../images/main_bnr.jpg) no-repeat; background-size:cover; }
+    max-width:100%; height:80vh;  background:url(../images/main_logo.jpg) no-repeat; background-size:cover; }
 main .main_bnr img {position: relative; top:20%; right:-40%;
 }
 
