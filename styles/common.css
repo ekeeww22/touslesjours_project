@@ -1,3 +1,4 @@
+body { overflow-y:hidden;}
 /* quick menu ---------------------------------------------------- */
 .quick_menu {
     z-index:999;

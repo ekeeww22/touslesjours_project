@@ -1,5 +1,6 @@
+
 /* main */
-main {max-width:1200px; margin:0 auto;}
+main {max-width:1200px; margin:0 auto; }
 /* breadcrumbs */
 main .breadcrumbs { width:100%; padding:200px 0 20px; display:flex; align-items:center; justify-content:flex-end; border-bottom:1px solid #C7C7C7;}
 main .breadcrumbs > a {}
